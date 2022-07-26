@@ -7,7 +7,9 @@ const MainHeader = (props) => {
   return (
     <header className={classes['main-header']}>
       <h1>A Typical Page</h1>
-      <Navigation isLoggedIn={props.isAuthenticated} onLogout={props.onLogout} />
+      {/*  Saco prop onLogout porque uso el context autorizando desde el dom del sitio con {useContext}
+      <Navigation onLogout={props.onLogout} /> */}
+      <Navigation/>
     </header>
   );
 };
